@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">TravelStar</string>
+    <string name="slogan">Jadilah Bintang Perjalanan</string>
+
+    <string name="signin">Masuk</string>
+    <string name="signup">Daftar</string>
+    <string name="username_label">Nama Pengguna</string>
+    <string name="password_label">Kata Sandi</string>
+    <string name="newaccount_label">Daftar akun baru</string>
+    <string name="forgot_pass_title">Lupa kata sandi</string>
+    <string name="email_label">Surat Elektronik</string>
+    <string name="next">Selanjutnya</string>
+    <string name="name_label">Nama</string>
+    <string name="bio_label">Biografi Singkat</string>
+    <string name="complete_btn">Buat Akun</string>
+    <string name="explore">Jelajahi</string>
+    <string name="mainmenu_title">Jelajahi</string>
+    <string name="mainmenu_desc">Rekomendasi untuk Anda</string>
+    <string name="mainmenu_tips">TravelTips</string>
+    <string name="mainmenu_tips_sec">Pelajari sebelum berpergian</string>
+    <string name="buy_ticket">Pesan Tiket</string>
+    <string name="ticket_tips">Detail Pemesanan</string>
+    <string name="ticket_tips_sec">Jumlah tiket</string>
+    <string name="save_btn">Simpan</string>
+
+
+</resources>

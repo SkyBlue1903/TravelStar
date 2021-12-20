@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketCheckoutAct"
+    android:background="@color/bgPrimary">
+
+
+    <!--    BIAR BISA DI SCROLL-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/bg_gradient_primary_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/mregular"
+                android:text="TravelPass"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--    ISINYA-->
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_layout_white"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingTop="20dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+<!--                DETAIL TIKET-->
+                <LinearLayout
+                    android:id="@+id/trip_menu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/trip_menu_ic1"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/ic_ticket_buy" />
+
+                    <LinearLayout
+                        android:layout_width="175dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/xnama_wisata"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/mregular"
+                            android:text="Destinasi"
+                            android:textColor="@color/blackPrimary"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/xlokasi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:fontFamily="@font/mlight"
+                            android:text="Lokasi"
+                            android:textColor="@color/grayPrimary"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#EDEDED" />
+
+
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mregular"
+                        android:text="Tanggal Keberangkatan"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/xdate_wisata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/mlight"
+                        android:text="-"
+                        android:textColor="@color/grayPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mregular"
+                        android:text="Waktu Keberangkatan"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/xtime_wisata"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/mlight"
+                        android:text="-"
+                        android:textColor="@color/grayPrimary"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/mregular"
+                        android:text="Informasi Tiket"
+                        android:textColor="@color/blackPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/xketentuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/mlight"
+                        android:text="-"
+                        android:textColor="@color/grayPrimary"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="222dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_barcode"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!--    TOMBOLNYA-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btn_buy_ticket"-->
+<!--                android:layout_width="250dp"-->
+<!--                android:layout_height="65dp"-->
+<!--                android:layout_marginTop="24dp"-->
+<!--                android:layout_marginEnd="24dp"-->
+
+<!--                android:layout_marginBottom="32dp"-->
+<!--                android:background="@null"-->
+<!--                android:backgroundTint="@color/redPrimary"-->
+<!--                android:fontFamily="@font/mmedium"-->
+<!--                android:text="Batalkan Tiket"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textSize="18sp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />-->
+
+            <LinearLayout
+                android:id="@+id/btn_back"
+                android:layout_width="90dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_layout_white"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <ImageView
+                    android:layout_width="37dp"
+                    android:layout_height="37dp"
+                    android:src="@drawable/ic_back"
+
+                    />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
